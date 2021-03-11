@@ -1,13 +1,14 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Maintainer: 
+" Maintainers:
 "       Amir Salihefendic — @amix3k
+"       Fitiavana Ramanandafy — @fitiavana07
 "
 " Awesome_version:
 "       Get this config, nice color schemes and lots of plugins!
 "
 "       Install the awesome version from:
 "
-"           https://github.com/amix/vimrc
+"           https://github.com/fitiavana07/vimrc
 "
 " Sections:
 "    -> General
@@ -126,6 +127,13 @@ endif
 
 " Add a bit extra margin to the left
 set foldcolumn=1
+
+set number relativenumber
+augroup numbertoggle
+    autocmd!
+    autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+    autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
