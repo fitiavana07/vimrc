@@ -1,3 +1,6 @@
+# TODO
+# support other default branch like of coc.nvim
+
 try:
     import concurrent.futures as futures
 except ImportError:
